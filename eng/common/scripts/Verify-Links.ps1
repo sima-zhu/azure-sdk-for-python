@@ -269,7 +269,7 @@ if ($urls) {
     exit 1;
   }  
 }
-
+LogWarning "You are running version $($PSVersionTable.PSVersion)."
 if ($PSVersionTable.PSVersion.Major -lt 6)
 {
   LogWarning "Some web requests will not work in versions of PS earlier then 6. You are running version $($PSVersionTable.PSVersion)."
